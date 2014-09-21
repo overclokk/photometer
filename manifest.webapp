@@ -1,5 +1,5 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Photometer",
 	"launch_path": "/index.html",
 	"description": "Photometer for FOS is a lightmeter for meausere light intensity. Photometers are used to determine the correct exposure in photography. With this tool get setting for your dSLR camera o reflex",
