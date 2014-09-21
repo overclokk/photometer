@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
 		// Lux value from sensor
-		var lux = 40; // <==== For testing and debug
+		// var lux = 40; // <==== For testing and debug
 
 		$( "#lux" ).html( "lux " + lux );
 
