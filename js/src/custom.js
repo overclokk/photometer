@@ -4,14 +4,14 @@ jQuery.noConflict()(function($){
 
 		window.addEventListener("devicelight", function (event) {
 
-		// Read out the lux value
+			// Read out the lux value
 
-		var lux = event.value;
+			var lux = event.value;
 
 		});
 
 		// Lux value from sensor
-		var lux = 40;
+		// var lux = 40;
 
 		$( "#lux" ).html( "lux " + lux );
 
