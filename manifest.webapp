@@ -1,0 +1,42 @@
+{
+	"version": "1.0.0",
+	"name": "Photometer",
+	"launch_path": "/index.html",
+	"description": "Photometer for FOS is a lightmeter for meausere light intensity. Photometers are used to determine the correct exposure in photography. With this tool get setting for your dSLR camera o reflex",
+	"icons": {
+		"16": "img/logo16.png",
+		"32": "img/logo32.png",
+		"48": "img/logo48.png",
+		"60": "img/logo60.png",
+		"64": "img/logo64.png",
+		"90": "img/logo90.png",
+		"120": "img/logo120.png",
+		"128": "img/logo128.png"
+		},
+	"developer": {
+		"name": "Enea Overclokk",
+		"url": "http://www.overclokk.net"
+		},
+	"installs_allowed_from": [
+	"*"
+	],
+	"default_locale": "en",
+	"locales": {
+		"en": {
+			"name": "Photometer",
+			"description": "Measure time and aperture for your reflex"
+			},
+		"en-US": {
+			"name": "Photometer",
+			"description": "Measure time and aperture for your reflex"
+			},
+		"es": {
+			"name": "Photometer",
+			"description": "Measure time and aperture for your reflex"
+			},
+		"it-IT": {
+			"name": "Photometer",
+			"description": "Measure time and aperture for your reflex"
+		}
+	}
+}

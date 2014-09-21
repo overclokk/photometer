@@ -1,0 +1,11 @@
+body { padding-bottom: 70px; }
+.select-style{
+	display: block;
+    width: 45px;
+}
+.form-select {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 90%;
+}

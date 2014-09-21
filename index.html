@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--Copyright 2014 Eugenio Petullà, Enea Scerba, Andrea Barghigiani, Marco Predari-->
+<!--This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see <http://www.gnu.org/licenses/>.-->
+<!--For more information and contact read the README.txt-->
+<!--Icons made by Freepik from
+	<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>
+	is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a> -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photometer beta version</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/src/custom.js"></script>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+		<header>
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<span class="navbar-brand">Photometer (beta)</span>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Faq</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+
+					</div><!-- /.container-fluid -->
+
+				</div>
+			</nav>
+		</header>
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-12">
+        			<p id="lux" class="text-center">lux</p>
+        			<p id="ev" class="text-center">EV</p>
+        			<p id="f" class="text-center">f</p>
+        			<p id="t" class="text-center">Time</p>
+        			<p id="iso" class="text-center">ISO</p>
+        			<div class="form-select">
+        				<form class="form-inline" role="form">
+        					<div class="form-group">
+        						<div class="input-group">
+        							<div class="input-group-addon"><span class="select-style">f</span></div>
+        							<select id="f-value" class="form-control">
+				        				<option>0.95</option>
+				        				<option>1.0</option>
+				        				<option>1.4</option>
+				        				<option>2.0</option>
+				        				<option>2.8</option>
+				        				<option>4.0</option>
+				        				<option>5.6</option>
+				        				<option>8.0</option>
+				        				<option>11</option>
+				        				<option>16</option>
+				        				<option>22</option>
+				        				<option>32</option>
+				        			</select>
+        						</div>
+        					</div>
+        					<div class="form-group">
+        						<div class="input-group">
+        							<div class="input-group-addon"><span class="select-style">Time</span></div>
+        							<select id="t-value" class="form-control">
+				        				<option value="3840">64'</option>
+				        				<option value="1920">32'</option>
+				        				<option value="960">16'</option>
+				        				<option value="480">8'</option>
+				        				<option value="240">4'</option>
+				        				<option value="120">2'</option>
+				        				<option value="60">60"</option>
+				        				<option value="30">30"</option>
+				        				<option value="15">15"</option>
+				        				<option value="8">8"</option>
+				        				<option value="4">4"</option>
+				        				<option value="2">2"</option>
+				        				<option value="1">1"</option>
+				        				<option value="0.5">1/2</option>
+				        				<option value="0.25">1/4</option>
+				        				<option value="0.125">1/8</option>
+				        				<option value="0.0666666666666667">1/15</option>
+				        				<option value="0.0333333333333333">1/30</option>
+				        				<option value="0.0166666666666667">1/60</option>
+				        				<option value="0.008">1/125</option>
+				        				<option value="0.004">1/250</option>
+				        				<option value="0.002">1/500</option>
+				        				<option value="0.001">1/1000</option>
+				        				<option value="0.0005">1/2000</option>
+				        				<option value="0.00025">1/4000</option>
+				        				<option value="0.000125">1/8000</option>
+				        			</select>
+        						</div>
+        					</div>
+        					<div class="form-group">
+        						<div class="input-group">
+        							<div class="input-group-addon"><span class="select-style">ISO</span></div>
+        							<select id="iso-value" class="form-control">
+				        				<!-- <option>50</option> -->
+				        				<option>100</option>
+				        				<!-- <option>200</option>
+				        				<option>400</option>
+				        				<option>800</option>
+				        				<option>1600</option>
+				        				<option>3200</option>
+				        				<option>6400</option> -->
+				        			</select>
+        						</div>
+        					</div>
+        				</form>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+    </body>
+</html>
