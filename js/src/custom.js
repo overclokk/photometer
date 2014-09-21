@@ -1,14 +1,11 @@
-jQuery.noConflict()(function($){
-	"use strict";
-	$(document).ready(function() {
+$(document).ready(function() {
 
-		window.addEventListener("devicelight", function (event) {
+	window.addEventListener("devicelight", function (event) {
 
-			// Read out the lux value
+		// Read out the lux value
 
-			var lux = event.value;
+		var lux = event.value;
 
-		});
 
 		// Lux value from sensor
 		// var lux = 40;
@@ -234,6 +231,7 @@ jQuery.noConflict()(function($){
 		// var fvalue = $('#f-value').val();
 		// alert(fvalue);
 
+	});// End event devicelight
 
-	});// Chiudo document ready
-});
+
+});// Chiudo document ready
