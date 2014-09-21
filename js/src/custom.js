@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-	// window.addEventListener("devicelight", function (event) {  // <==== Event devicelight
+	window.addEventListener("devicelight", function (event) {  // <==== Event devicelight
 
 		// Read out the lux value
 
-		// var lux = event.value;  // <==== Event devicelight
+		var lux = event.value;  // <==== Event devicelight
 
 
 		// Lux value from sensor
@@ -227,7 +227,7 @@ $(document).ready(function() {
 		// When select for f value change execute the displayT() function
 		$( "#t-value" ).change( displayT );
 
-	// });// End event devicelight  // <==== Event devicelight
+	});// End event devicelight  // <==== Event devicelight
 
 
 });// Chiudo document ready
